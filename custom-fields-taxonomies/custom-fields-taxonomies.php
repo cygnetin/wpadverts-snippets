@@ -56,7 +56,7 @@ function custom_fields_taxonomies_form_load( $form ) {
         "name" => "test_tax_example",
         "type" => "adverts_field_select",
         "label" => "Taxonomy Example",
-        "options_callback" => "wpadverts_custom_fields_data_source_default_taxonomy",
+        "options_callback" => "custom_fields_taxonomies_data_source",
         "options_callback_params" => array( "taxonomy" => "taxonomy_example" ),
         "save" => array( "method" => "taxonomy", "taxonomy" => "taxonomy_example" )
     );
